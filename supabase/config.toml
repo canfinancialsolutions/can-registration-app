@@ -1,0 +1,7 @@
+project_id = "YOUR_SUPABASE_PROJECT_ID"
+
+[api]
+enabled = true
+
+[functions.register]
+verify_jwt = false
