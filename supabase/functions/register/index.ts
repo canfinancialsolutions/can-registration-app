@@ -1,5 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
+ 
+
 type Payload = {
   interest_type: string;
   business_opportunities: string[];
@@ -109,7 +111,30 @@ Deno.serve(async (req) => {
     preferred_time: body.preferred_time,
     referred_by: String(body.referred_by).trim(),
   };
+  const { data, error: dbErr } = await supabase
+  .from("client_registrations")
+  .insert(payloadToInsert)
+  .select("id, created_at")
+  .single();
 
+if (dbErr) {
+  return new Response(
+    JSON.stringify({
+      ok: false,
+      error: "Database insert failed",
+      detail: dbErr.message,
+      code: dbErr.code ?? null,
+    }),
+    {
+      status: 500,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    }
+  );
+}
+
+// Optional: use data.id later (admin email, logs, etc.)
+
+/*
   const { error: dbErr } = await supabase.from("client_registrations").insert(payloadToInsert);
   if (dbErr) {
     return new Response(JSON.stringify({ ok: false, error: dbErr.message }), {
@@ -117,7 +142,7 @@ Deno.serve(async (req) => {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }
-
+*/
   const interestTypeFormatted =
     interestType === "both" ? "Both" : titleCase(interestType);
 
@@ -189,6 +214,7 @@ Deno.serve(async (req) => {
           {
             From: { Email: FROM_EMAIL, Name: FROM_NAME },
             To: [{ Email: toEmail, Name: toName }],
+            ReplyTo:[{ Email: FROM_EMAIL, Name: FROM_NAME } ],
             Subject: subject,
             HTMLPart: html,
           },
@@ -206,13 +232,19 @@ Deno.serve(async (req) => {
     htmlBody
   );
 
-  if (!clientRes.ok) {
-    const detail = await clientRes.text();
-    return new Response(JSON.stringify({ ok: false, error: "Email failed", detail }), {
-      status: 502,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-    });
-  }
+if (!clientRes.ok) {
+  const detail = await clientRes.text();
+  // ✅ submission saved, but email failed
+  return new Response(JSON.stringify({ ok: true, email_sent: false, email_error: detail }), {
+    status: 200,
+    headers: { ...corsHeaders, "Content-Type": "application/json" },
+  });
+}
+
+return new Response(JSON.stringify({ ok: true, email_sent: true }), {
+  status: 200,
+  headers: { ...corsHeaders, "Content-Type": "application/json" },
+});
 
   // Optional admin notification
   if (ADMIN_NOTIFY_EMAIL) {
