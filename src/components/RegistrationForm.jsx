@@ -383,11 +383,11 @@ export default function RegistrationForm() {
             >
               <CheckCircle2 className="successIcon" />
               <div className="h1" style={{ fontSize: 28, margin: "6px 0 8px" }}>
-                You're all set — your registration is submitted!
+                You're all set - your registration is submitted!
               </div>
               <p className="sub1" style={{ margin: 0 }}>
                 {emailSent ? (
-                  <>A confirmation email has been sent to <b>{formData.email}</b>.</>
+                  <>A confirmation email has been sent to <b>{formData.email}</b>.Please check your inbox or spam folder for the confirmation email. Thank you!</>
                 ) : (
                   <>Registration received! We weren't able to send your confirmation email at the moment, but we'll reach out to you soon.</>
                 )}
