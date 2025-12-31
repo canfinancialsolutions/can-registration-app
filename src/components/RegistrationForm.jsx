@@ -139,7 +139,7 @@ export default function RegistrationForm() {
                 <img className="logo" src={logo} alt="CAN Financial Solutions" />
                 <div className="h1">Get Started - Registration</div>
                 <p className="sub1">We're excited to help you achieve your financial goals!</p>
-                <p className="sub2">Are you interested in becoming a successful entrepreneur and building your own business?
+                <p className="sub2">Are you interested in becoming a successful entrepreneur and building your own business?</p>
                 <p className="sub3">✅ Want to be your own boss?</p>
                 <p className="sub4">✅ Looking for a flexible career with unlimited growth potential?</p>
                 <p className="sub5"> Join our team and start your journey toward financial independence! </p>
