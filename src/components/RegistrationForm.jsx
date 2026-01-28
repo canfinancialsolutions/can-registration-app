@@ -150,6 +150,9 @@ export default function RegistrationForm() {
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-4">
                   We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
                 </p>
+                <p className="sub2 text-base md:text-lg font-semibold text-slate-800 mb-4">
+                  <b>Are you ready to make a real difference while building your future?</b>
+                </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-6">
                   At CAN Care & Advancement Network, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
                 </p>
