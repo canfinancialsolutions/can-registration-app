@@ -164,7 +164,7 @@ const interestTypeFormatted =
       <div style="text-align:center;margin-bottom:18px;">
         ${ ? `<img src="${}" alt="CAN Care & Advancement Network" style="max-width:160px;height:auto;margin-bottom:10px;" />` : ""}
         <h2 style="margin:0;">Registration Confirmation</h2>
-        <div style="color:#475569;font-size:13px;margin-top:6px;">We're excited to help you achieve your financial goals!</div>
+        <div style="color:#475569;font-size:13px;margin-top:6px;">We're excited to connect with you and introduce an opportunity that combines purpose with prosperity!</div>
       </div>
 
       <p>Dear <b>${escapeHtml(payloadToInsert.first_name)} ${escapeHtml(payloadToInsert.last_name)}</b>,</p>
