@@ -143,7 +143,7 @@ export default function RegistrationForm() {
                 <p className="sub2">We’re excited to connect with you and help you take the next step toward a flexible, growth-focused opportunity.</p>
                  <p className="sub2">Are you interested in building your own business with training, mentorship, and a supportive team?</p>
                 <p className="sub2">✅ Want to be your own boss? ✅ Looking for a flexible career with unlimited growth potential?</p>
-                <p className="sub2"> Join our team and start your journey toward financial independence! </p>
+                <p className="sub2">Join our team and let’s Build together · Thrive together.</p>
               </div>
 
               <form className="cardBody" onSubmit={handleSubmit}>
