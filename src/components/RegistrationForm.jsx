@@ -161,9 +161,7 @@ export default function RegistrationForm() {
                    <p className="sub2 text-sm md:text-base text-slate-800 text-center">
                     ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
                   </p>
-                </div>
               </div>
-
               <form className="cardBody" onSubmit={handleSubmit}>
                 {/* Interest */}
                 <div className="section">
