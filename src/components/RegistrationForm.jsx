@@ -158,6 +158,8 @@ export default function RegistrationForm() {
                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
                     ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b>
                   </p>
+                  </div>
+                  <div>
                    <p className="sub2 text-sm md:text-base text-slate-800 text-center">
                     ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
                   </p>
