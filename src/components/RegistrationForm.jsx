@@ -149,21 +149,22 @@ export default function RegistrationForm() {
                 </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-4">
                   We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
-                 <p className="sub2 text-base md:text-lg text-slate-700 mb-6">
-                  At <b>CAN Care & Advancement Network</b>, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
                 </p>
-             </div>
+                <p className="sub2 text-base md:text-lg font-semibold text-slate-800 mb-4">
+                  <b>Are you ready to make a real difference while building your future?</b>
+                </p>
+                <p className="sub2 text-base md:text-lg text-slate-700 mb-6">
+                  At CAN Care & Advancement Network, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
+                </p>
+
                 {/* Benefits Section - FIXED: Now properly centered */}
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
-                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b>
+                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b> ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
                   </p>
-                  </div>
-                  <div>
-                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
-                    ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
-                  </p>
+                </div>
               </div>
+
               <form className="cardBody" onSubmit={handleSubmit}>
                 {/* Interest */}
                 <div className="section">
@@ -201,15 +202,16 @@ export default function RegistrationForm() {
                     </div>
 
                     {showEntrepreneurship ? (
-                      <div className="col">
+                      <div className="flex flex-col space-y-2">
                         {BUSINESS_OPPORTUNITIES.map((o) => (
-                          <label className="check" key={o.id}>
+                          <label className="flex items-start gap-2 cursor-pointer text-sm md:text-base" key={o.id}>
                             <input
                               type="checkbox"
+                              className="mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0"
                               checked={formData.business_opportunities.includes(o.id)}
                               onChange={() => toggleArray("business_opportunities", o.id)}
                             />
-                            {o.label}
+                            <span className="leading-snug">{o.label}</span>
                           </label>
                         ))}
                       </div>
@@ -224,15 +226,16 @@ export default function RegistrationForm() {
                     </div>
 
                     {showClient ? (
-                      <div className="col">
+                      <div className="flex flex-col space-y-2">
                         {WEALTH_SOLUTIONS.map((o) => (
-                          <label className="check" key={o.id}>
+                          <label className="flex items-start gap-2 cursor-pointer text-sm md:text-base" key={o.id}>
                             <input
                               type="checkbox"
+                              className="mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0"
                               checked={formData.wealth_solutions.includes(o.id)}
                               onChange={() => toggleArray("wealth_solutions", o.id)}
                             />
-                            {o.label}
+                            <span className="leading-snug">{o.label}</span>
                           </label>
                         ))}
                       </div>
