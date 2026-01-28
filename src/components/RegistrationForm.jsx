@@ -157,14 +157,9 @@ export default function RegistrationForm() {
                 {/* Benefits Section - FIXED: Now properly centered */}
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
-                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b>
+                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b> ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
                   </p>
-                </div>
-                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
-                  <p className="sub2 text-sm md:text-base text-slate-800 text-center">
-                    ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
-                  </p>
-                </div>
+                 
               </div>
 
               <form className="cardBody" onSubmit={handleSubmit}>
