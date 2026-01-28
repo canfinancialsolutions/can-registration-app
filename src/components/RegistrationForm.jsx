@@ -137,16 +137,13 @@ export default function RegistrationForm() {
               transition={{ duration: 0.2 }}
             >
               <div className="cardHeader text-center">
-                <img src="/CAN_TTN.png" alt="CAN Care & Advancement Network" className="h-14 md:h-16 mx-auto mb-4" />
-                <div className="h1 text-2xl md:text-3xl font-bold text-slate-900 mb-4">Get Started - Registration</div>
+                <img src="/can-logo.png" alt="CAN Care & Advancement Network" className="h-14 md:h-16 mx-auto mb-4" />
+                <div className="h1 text-2xl md:text-2xl font-bold text-slate-900 mb-4">Get Started - Registration</div>
                 <p className="sub1 text-xl md:text-2xl font-semibold text-green-600 mb-4">
                   <b>Welcome to CAN Care & Advancement Network</b>
                 </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-4">
                   We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
-                </p>
-                <p className="sub2 text-base md:text-lg font-semibold text-slate-800 mb-4">
-                  <b>Are you ready to make a real difference while building your future?</b>
                 </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-6">
                   At CAN Care & Advancement Network, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
@@ -155,7 +152,10 @@ export default function RegistrationForm() {
                 {/* Benefits Section - FIXED: Now properly centered */}
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
-                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b> ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
+                    ✅ <b>Be your own boss</b> – Build a business on your terms 
+                    ✅ <b>Flexible schedule</b> – Work when and where it works for you 
+                    ✅ <b>Unlimited income potential</b> – Your success has no ceiling 
+                    ✅ <b>Make an impact</b> – Protect families while building your legacy
                   </p>
                 </div>
               </div>
