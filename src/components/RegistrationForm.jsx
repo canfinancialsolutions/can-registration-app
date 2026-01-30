@@ -173,11 +173,11 @@ export default function RegistrationForm() {
   
   {/* Registration Heading - Smaller, Bold */}
   <h1 style={{
-    fontSize: '16px',
+    fontSize: '18px',
     fontWeight: 'bold',
     color: '#0f172a',
-    marginTop: '20px',
-    marginBottom: '20px',
+    marginTop: '15px',
+    marginBottom: '15px',
     textAlign: 'center'
   }}>
     Get Started - Registration
