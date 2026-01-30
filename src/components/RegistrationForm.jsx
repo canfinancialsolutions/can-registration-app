@@ -141,8 +141,7 @@ export default function RegistrationForm() {
                 <div className="h1 text-xl text-blue-700 mb-0 leading-none"><b>CAN Care & Advancement Network</b></div>
                 <div className="sub2 text-sm text-yellow-600 mb-0 leading-none">Caring today, advancing tomorrow</div>
                  <p className="h1 text-sm md:text-3xl font-semibold text-slate-900 mb-4">Get Started - Registration</p>
-                </p>
-                <p className="sub2 text-xl md:text-2xl font-semibold text-green-600 mb-4">
+                 <p className="sub2 text-xl md:text-2xl font-semibold text-green-600 mb-4">
                 Welcome to <b>CAN Care & Advancement Network</b>
                 </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-4">
