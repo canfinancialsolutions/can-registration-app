@@ -136,7 +136,7 @@ export default function RegistrationForm() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-           <div className="cardHeader text-center">
+          <div className="cardHeader text-center">
   {/* Logo - Responsive */}
   <img 
     src={logo} 
@@ -160,6 +160,7 @@ export default function RegistrationForm() {
     Get Started - Registration
   </h1>
   
+  {/* Welcome Text - Compact */}
   <p className="text-sm md:text-base text-slate-700 mb-2 leading-snug">
     Welcome to CAN Care & Advancement Network.
     We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
@@ -176,6 +177,28 @@ export default function RegistrationForm() {
     </p>
   </div>
 </div>
+
+<form className="cardBody" onSubmit={handleSubmit}>
+  {/* Your form content starts here */}
+```
+
+## **IMPORTANT - Make sure:**
+
+1. ✅ Everything is INSIDE `<div className="cardHeader text-center">` ... `</div>`
+2. ✅ The closing `</div>` comes AFTER the benefits section
+3. ✅ The `<form className="cardBody">` starts AFTER the cardHeader closing tag
+
+The structure should be:
+```
+<div className="cardHeader text-center">
+  logo
+  company name (blue)
+  tagline (gold)  
+  Get Started heading (smaller)
+  welcome text
+  benefits box
+</div>  ← Close cardHeader here
+  
               <form className="cardBody" onSubmit={handleSubmit}>
                 {/* Interest */}
                 <div className="section">
