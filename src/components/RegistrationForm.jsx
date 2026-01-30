@@ -148,7 +148,7 @@ export default function RegistrationForm() {
   
   {/* Company Name - Blue, Bold */}
   <h2 style={{ 
-    fontSize: '20px', 
+    fontSize: '18px', 
     fontWeight: 'bold', 
     color: '#1d4ed8', 
     marginBottom: '0px', 
@@ -173,7 +173,7 @@ export default function RegistrationForm() {
   
   {/* Registration Heading - Smaller, Bold */}
   <h1 style={{
-    fontSize: '22px',
+    fontSize: '25px',
     fontWeight: 'bold',
     color: '#0f172a',
     marginTop: '8px',
