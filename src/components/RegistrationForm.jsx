@@ -145,34 +145,79 @@ export default function RegistrationForm() {
     style={{ maxHeight: '96px' }}
   />
   
-  {/* Company Name - Blue, Bold */}
-  <h2 className="text-xl font-bold text-blue-700 mb-0 leading-tight">
+  {/* Company Name - Blue, Bold - INLINE STYLES */}
+  <h2 style={{ 
+    fontSize: '20px', 
+    fontWeight: 'bold', 
+    color: '#1d4ed8', 
+    marginBottom: 0, 
+    lineHeight: 1.2,
+    textAlign: 'center'
+  }}>
     CAN Care & Advancement Network
   </h2>
   
-  {/* Tagline - Gold, Bold */}
-  <p className="text-sm font-bold text-yellow-600 mb-0 mt-0.5 leading-tight">
+  {/* Tagline - Gold, Bold - INLINE STYLES */}
+  <p style={{ 
+    fontSize: '14px', 
+    fontWeight: 'bold', 
+    color: '#ca8a04', 
+    marginBottom: 0,
+    marginTop: '2px',
+    lineHeight: 1.2,
+    textAlign: 'center'
+  }}>
     Caring today, advancing tomorrow
   </p>
   
   {/* Registration Heading - Smaller, Bold */}
-  <h1 className="text-base md:text-lg font-bold text-slate-900 mt-3 mb-3">
+  <h1 style={{
+    fontSize: '16px',
+    fontWeight: 'bold',
+    color: '#0f172a',
+    marginTop: '12px',
+    marginBottom: '12px',
+    textAlign: 'center'
+  }}>
     Get Started - Registration
   </h1>
   
-  {/* Welcome Text - Compact */}
-  <p className="text-sm md:text-base text-slate-700 mb-2 leading-snug">
+  {/* Welcome Text - Compact, Centered */}
+  <p style={{
+    fontSize: '14px',
+    color: '#334155',
+    marginBottom: '8px',
+    lineHeight: 1.5,
+    textAlign: 'center'
+  }}>
     Welcome to CAN Care & Advancement Network.
     We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
   </p>
   
-  <p className="text-xs md:text-sm text-slate-600 mb-3 leading-snug">
+  <p style={{
+    fontSize: '13px',
+    color: '#64748b',
+    marginBottom: '12px',
+    lineHeight: 1.5,
+    textAlign: 'center'
+  }}>
     At <strong>CAN Care & Advancement Network</strong>, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
   </p>
   
-  {/* Benefits Section - Compact */}
-  <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-3 md:p-4 mb-4">
-    <p className="text-xs md:text-sm text-slate-800 text-center leading-relaxed">
+  {/* Benefits Section - Compact, Centered */}
+  <div style={{
+    background: 'linear-gradient(to right, #f0fdf4, #eff6ff)',
+    borderRadius: '8px',
+    padding: '12px 16px',
+    marginBottom: '16px',
+    textAlign: 'center'
+  }}>
+    <p style={{
+      fontSize: '13px',
+      color: '#1e293b',
+      margin: 0,
+      lineHeight: 1.6
+    }}>
       ✅ <strong>Be your own boss</strong> ✅ <strong>Flexible schedule</strong> ✅ <strong>Unlimited income potential</strong> ✅ <strong>Make an impact</strong>
     </p>
   </div>
