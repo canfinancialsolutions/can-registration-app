@@ -173,11 +173,11 @@ export default function RegistrationForm() {
   
   {/* Registration Heading - Smaller, Bold */}
   <h1 style={{
-    fontSize: '18px',
+    fontSize: '22px',
     fontWeight: 'bold',
     color: '#0f172a',
-    marginTop: '15px',
-    marginBottom: '15px',
+    marginTop: '8px',
+    marginBottom: '8px',
     textAlign: 'center'
   }}>
     Get Started - Registration
@@ -187,7 +187,7 @@ export default function RegistrationForm() {
                   We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
                 </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-6">
-                  At <b>CAN Care & Advancement Network</b>, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
+                  At CAN Care & Advancement Network, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
                 </p>
                 {/* Benefits Section */}
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
