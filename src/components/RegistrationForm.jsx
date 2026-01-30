@@ -142,13 +142,13 @@ export default function RegistrationForm() {
   <img 
     src={logo} 
     alt="CAN Care & Advancement Network" 
-    className="h-18 md:h-22 lg:h-26 w-auto mx-auto mb-2 object-contain max-w-full" 
+    className="h-20 md:h-24 lg:h-28 w-auto mx-auto mb-2 object-contain max-w-full" 
     style={{ maxHeight: '96px' }}
   />
   
   {/* Company Name - Blue, Bold */}
   <h2 style={{ 
-    fontSize: '16px', 
+    fontSize: '18px', 
     fontWeight: 'bold', 
     color: '#1d4ed8', 
     marginBottom: '0px', 
@@ -160,7 +160,7 @@ export default function RegistrationForm() {
   
   {/* Tagline - Gold, Bold */}
   <p style={{ 
-    fontSize: '13px', 
+    fontSize: '14px', 
     fontWeight: 'bold', 
     color: '#ca8a04', 
     marginBottom: '0px',
@@ -173,7 +173,7 @@ export default function RegistrationForm() {
   
   {/* Registration Heading - Smaller, Bold */}
   <h1 style={{
-    fontSize: '22px',
+    fontSize: '23px',
     fontWeight: 'bold',
     color: '#0f172a',
     marginTop: '10px',
@@ -192,7 +192,10 @@ export default function RegistrationForm() {
                 {/* Benefits Section */}
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
-                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b> ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
+                    ✅ <b>Be your own boss</b> ✅ <b>Flexible schedule</b>
+                  </p>
+                   <p className="sub2 text-sm md:text-base text-slate-800 text-center">
+                   ✅ <b>Unlimited income potential</b> ✅ <b>Make an impact</b>
                   </p>
                 </div>
 </div>
