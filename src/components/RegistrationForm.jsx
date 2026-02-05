@@ -161,7 +161,7 @@ export default function RegistrationForm() {
   {/* Tagline - Gold, Bold */}
   <p style={{ 
     fontSize: '14px', 
-    fontWeight: 'normal', 
+    fontWeight: 'bold', 
     color: '#FFD700', 
     marginBottom: '0px',
     marginTop: '4px',
