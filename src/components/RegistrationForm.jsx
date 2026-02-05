@@ -141,7 +141,7 @@ export default function RegistrationForm() {
   {/* Logo - Responsive */}
   <img 
     src={logo} 
-    alt="ACN Advancement & Care Network" 
+    alt="Advancement & Care Network" 
     className="h-20 md:h-24 lg:h-28 w-auto mx-auto mb-2 object-contain max-w-full" 
     style={{ maxHeight: '96px' }}
   />
@@ -150,19 +150,19 @@ export default function RegistrationForm() {
   <h2 style={{ 
     fontSize: '18px', 
     fontWeight: 'bold', 
-    color: '#1d4ed8', 
+    color: 'blue-800', 
     marginBottom: '0px', 
     lineHeight: 1.2,
     textAlign: 'center'
   }}>
-    ACN Advancement & Care Network
+    Advancement & Care Network
   </h2>
   
   {/* Tagline - Gold, Bold */}
   <p style={{ 
     fontSize: '14px', 
-    fontWeight: 'bold', 
-    color: '#ca8a04', 
+    fontWeight: 'normal', 
+    color: 'yellow-500', 
     marginBottom: '0px',
     marginTop: '4px',
     lineHeight: 1.2,
@@ -187,7 +187,7 @@ export default function RegistrationForm() {
                   We're excited to connect with you and introduce an opportunity that combines purpose with prosperity.
                 </p>
                 <p className="sub2 text-base md:text-lg text-slate-700 mb-6">
-                  At ACN Advancement & Care Network, you'll help families secure their tomorrow while advancing your own career with unlimited potential.
+                  At Advancement & Care Network, you'll help families secure their tomorrow and advance your career with unlimited potential.
                 </p>
                 {/* Benefits Section */}
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-6 mx-auto max-w-4xl">
