@@ -5,7 +5,7 @@ export default function App() {
     <div className="page">
       <RegistrationForm />
       <footer className="footer">
-        <span>©{new Date().getFullYear()} CAN Care & Advancement Network</span>
+        <span>©{new Date().getFullYear()} ACN Advancement & Care Network</span>
       </footer>
     </div>
   );
