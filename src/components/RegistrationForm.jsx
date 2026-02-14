@@ -144,7 +144,7 @@ export default function RegistrationForm() {
     alt="AnuNathan Financial Group" 
     className="h-20 md:h-24 lg:h-28 w-auto mx-auto mb-2 object-contain max-w-full" 
   style={{ backgroundColor: 'transparent', mixBlendMode: 'normal' }}
-`/>
+  />
 
   {/* Company Name - Blue, Bold */}
   <h2 style={{ 
