@@ -136,7 +136,7 @@ export default function RegistrationForm() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-
+   {/*
 <div className="cardHeader text-center">
  <img 
     src={logo} 
@@ -169,7 +169,7 @@ export default function RegistrationForm() {
   }}>
     Building careers, protecting families
   </p>
-  
+  */}
   {/* Registration Heading - Smaller, Bold */}
   <h1 style={{
     fontSize: '23px',
