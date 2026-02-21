@@ -252,7 +252,7 @@ const interestTypeFormatted =
   // Optional admin notification
   if (ADMIN_NOTIFY_EMAIL) {
     const adminHtml = htmlBody.replace("Registration Confirmation", "New Client Registration");
-    await sendMail(ADMIN_NOTIFY_EMAIL, "Admin", "New Client Registration - AnuNathan Financial Group", adminHtml);
+    await sendMail(ADMIN_NOTIFY_EMAIL, "Admin", "New Client Registration - ", <b>${escapeHtml(payloadToInsert.first_name)} ${escapeHtml(payloadToInsert.last_name)}</b>,adminHtml);
   }
 
   return new Response(JSON.stringify({ ok: true }), {
