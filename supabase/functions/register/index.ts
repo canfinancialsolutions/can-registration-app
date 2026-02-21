@@ -126,7 +126,7 @@ Deno.serve(async (req) => {
   const FROM_NAME = Deno.env.get("FROM_NAME") ?? "AnuNathan Financial Group";
   const ADMIN_NOTIFY_EMAIL = Deno.env.get("ADMIN_NOTIFY_EMAIL") ?? "";
   const LOGO_URL = Deno.env.get("LOGO_URL") ?? "";
-  const BCC_EMAIL = Deno.env.get("BCC_EMAIL") ?? "chidam.alagar@gmail.com";
+  const BCC_EMAIL = Deno.env.get("BCC_EMAIL") ?? "";
 
   const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
