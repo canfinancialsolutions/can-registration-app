@@ -233,26 +233,32 @@ const interestTypeFormatted =
     return res;
   }
 
-  // Email to client
+  // Email to client - PERSONALIZED subject
   const clientRes = await sendMail(
     payloadToInsert.email,
-    `${escapeHtml(payloadToInsert.first_name)} ${escapeHtml(payloadToInsert.last_name)}`,
-    "Registration Confirmation - AnuNathan Financial Group",
+    `${payloadToInsert.first_name} ${payloadToInsert.last_name}`,
+    `Welcome ${payloadToInsert.first_name}, ${payloadToInsert.last_name}! - Registration Confirmation`,
     htmlBody
   );
 
   if (!clientRes.ok) {
     const detail = await clientRes.text();
+    console.error('Email send failed:', detail);
     return new Response(JSON.stringify({ ok: false, error: "Email failed", detail }), {
       status: 502,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }
 
-  // Optional admin notification
+  // Optional admin notification - SHOWS client name
   if (ADMIN_NOTIFY_EMAIL) {
     const adminHtml = htmlBody.replace("Registration Confirmation", "New Client Registration");
-    await sendMail(ADMIN_NOTIFY_EMAIL, "Admin", "New Client Registration - AnuNathan Financial Group", adminHtml);
+    await sendMail(
+      ADMIN_NOTIFY_EMAIL, 
+      "Admin", 
+      `New Registration: ${payloadToInsert.first_name},  ${payloadToInsert.last_name} - ${interestTypeFormatted}`,
+      adminHtml
+    );
   }
 
   return new Response(JSON.stringify({ ok: true }), {
